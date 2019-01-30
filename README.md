@@ -6,12 +6,13 @@ Could be done with a simple `system.run[dig +short {HOST.CONN}]` however I wante
 
 ## Installation
 
-* `cd` to Zabbix's `externalscripts/` directory
-* clone
-* `cd zabbix-ipv4address`
-* `chmod 755 ipv4address.sh`
+* `git clone https://github.com/ctrl-freak/zabbix-ipv4address.git`
+* `cp zabbix-ipv4address/ipv4address.sh /usr/lib/zabbix/externalscripts/`)
+* `chmod 755 /usr/lib/zabbix/externalscripts/ipv4address.sh`
 
 ## Test
+
+`cd /usr/lib/zabbix/externalscripts/`
 
 `./ipv4address.sh google.com`
 
@@ -24,3 +25,5 @@ Could be done with a simple `system.run[dig +short {HOST.CONN}]` however I wante
 Create a Zabbix External check Item with key `ipv4address.sh[{HOST.CONN}]`
 
 Can use `dig` or `getent` as the second argument, though it will use `dig` as default
+
+`ipv4address.sh[{HOST.CONN},getent]`
