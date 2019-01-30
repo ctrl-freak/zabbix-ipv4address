@@ -7,7 +7,7 @@ Could be done with a simple `system.run[dig +short {HOST.CONN}]` however I wante
 ## Installation
 
 * `git clone https://github.com/ctrl-freak/zabbix-ipv4address.git`
-* `cp zabbix-ipv4address/ipv4address.sh /usr/lib/zabbix/externalscripts/`)
+* `cp zabbix-ipv4address/ipv4address.sh /usr/lib/zabbix/externalscripts/`
 * `chmod 755 /usr/lib/zabbix/externalscripts/ipv4address.sh`
 
 ## Test
